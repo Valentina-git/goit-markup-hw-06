@@ -177,6 +177,7 @@ body {
 
 .icon-mail,
 .icon-tell {
+	fill: currentColor;
 	width: 16px;
 	height: 12px;
 	margin-right: 10px;
@@ -198,20 +199,29 @@ body {
 }
 
 /* Footer */
+
 .footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: #2f303a;
 }
-
+.block {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+.footer-box {
+	width: calc(50 - 45px) / 2;
+}
+.footer-box:last-child {
+	width: calc(50%-15px);
+}
 .logo-footer {
 	display: block;
 	margin-bottom: 20px;
-
 	color: var(--primary-white-color);
 	font-style: normal;
 }
-
 .footer-link {
 	transition: var(--transition);
 	font-weight: 400;
@@ -233,19 +243,7 @@ body {
 	margin-bottom: 0;
 }
 
-.footer .block {
-	display: flex;
-	align-items: baseline;
-}
-
 /* Присоединяйтесь */
-.join-block {
-	display: block;
-	margin-left: 70px;
-
-	width: 206px;
-	height: 80px;
-}
 .join {
 	font-weight: 700;
 	font-size: 14px;
@@ -262,6 +260,8 @@ body {
 	border-radius: 50%;
 }
 .join-link {
+	background-position: center;
+	justify-content: center;
 	transition: var(--transition);
 	display: flex;
 	align-items: center;
@@ -295,10 +295,6 @@ body {
 	text-transform: uppercase;
 	margin-bottom: 20px;
 	color: var(--primary-white-color);
-}
-
-.subscribe {
-	margin-left: 30px;
 }
 .subscribe-form {
 	display: flex;
