@@ -299,24 +299,23 @@ body {
 
 .subscribe {
 	margin-left: 30px;
-	width: 570px;
-	height: 86px;
 }
-.subscribe-list {
+.subscribe-form {
 	display: flex;
-	margin-top: 20px;
+	justify-content: center;
 	align-items: center;
 }
 .subscribe-input {
 	transition: var(--transition);
+	padding: 10px 20px;
 	width: 358px;
+
 	height: 50px;
-	border: none;
 	border: 1px solid rgba(255, 255, 255, 0.3);
-	box-sizing: border-box;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 	background-color: transparent;
+	color: var(--primary-white-color);
 }
 .subscribe-input:hover,
 .subscribe-input:focus {
@@ -326,6 +325,7 @@ body {
 	padding-left: 16px;
 }
 .subscribe-btn {
+	position: relative;
 	width: 200px;
 	height: 50px;
 	cursor: pointer;
@@ -335,7 +335,7 @@ body {
 	padding-bottom: 10px;
 	padding-right: 62px;
 	padding-left: 29px;
-	margin-left: 41px;
+	margin-left: 15px;
 
 	font-family: inherit;
 	font-weight: 700;
@@ -357,10 +357,6 @@ body {
 .subscribe-btn:focus + .subscribe-icon {
 	fill: var(--accent-color);
 }
-
-.subscribe-item {
-	position: relative;
-}
 .subscribe-icon {
 	transition: var(--transition);
 	position: absolute;
@@ -369,6 +365,6 @@ body {
 	width: 24px;
 	height: 24px;
 	cursor: pointer;
-	fill: var(--primary-white-color);
+	fill: currentColor;
 	background-size: contain;
 }
