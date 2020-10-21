@@ -23,36 +23,36 @@
 
       <nav class="navigation">
         <!-- Logo-header -->
-        <a class="logo logo-header" href="./index.html" 
+        <a class="logo logo-header link" href="./index.html" 
         aria-label="logo" >
           <span class="accent-web">Web</span>Studio</a>
 
         <!-- Site  -->
-      <ul class="site-nav list">
+      <ul class="site-nav ">
         <li class="item">
-          <a class="site-nav__link current" 
+          <a class="site-nav__link current link" 
           href="./index.html">
             Студия</a></li>
         <li class="item">
-          <a class="site-nav__link" 
+          <a class="site-nav__link link" 
           href="./portfolio.html">
             Портфолио</a></li>
         <li class="item">
-          <a class="site-nav__link" href="">Контакты</a></li>
+          <a class="site-nav__link link" href="">Контакты</a></li>
       </ul>
       </nav>
       
       <address class="address">
-        <ul class="site-contacts list">
+        <ul class="site-contacts link">
           <li class="item">
-            <a class="site-contact__link" 
+            <a class="site-contact__link link" 
             href="mailto:info@devstudio.com">
               <svg class="icon-mail">
                 <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a> </li>
           <li class="item">
-            <a class="site-contact__link" 
+            <a class="site-contact__link link" 
             href="tel:+380961111111">
               <svg class="icon-tell">
                 <use href="./images/sprite.svg#icon-tell"></use>
@@ -387,23 +387,23 @@
   <!--address-block -->
     <div class="address-block">
     <!-- Logo-footer -->
-    <a href="" class="logo logo-footer">
+    <a href="" class="logo logo-footer link">
       <span class="accent-web">Web</span>Studio
     </a>
     <address class="address">
         <ul class="list-footer">
           <li class="footer-item">
-            <a class="footer-link full-white" href="https://goo.gl/maps/Jzkq81QmXv9pryJU8" target="_blank">
+            <a class="footer-link full-white link" href="https://goo.gl/maps/Jzkq81QmXv9pryJU8" target="_blank">
               г. Киев, пр-т Леси Украинки, 26
             </a>
           </li>
           <li class="footer-item">
-            <a class="footer-link" href="mailto:info@example.com">
+            <a class="footer-link link" href="mailto:info@example.com">
               info@example.com
             </a>
           </li>
           <li class="footer-item">
-            <a class="footer-link" href="tel:+380991111111">
+            <a class="footer-link link" href="tel:+380991111111">
               +38 099 111 11 11
             </a>
           </li>
@@ -452,70 +452,100 @@
 
 <!-- Подпишитесь на рассылку -->
 <div class="subscribe">
-  <a class="subscribe-text" href="">Подпишитесь на рассылку</a>
+  <p class="subscribe-text">Подпишитесь на рассылку</p>
   
   <ul class="subscribe-list">
     <li class="subscribe-item">
       <form class="subscribe-form" action="#">
         <input class="subscribe-input" 
         name="user-phone" type="email" 
-        placeholder="E-mail"></form>
+        placeholder="E-mail" required></form>
+        
     </li>
     <li class="subscribe-item">
       <button class="subscribe-btn" type="submit">Подписаться</button>
+      <svg class="subscribe-icon">
+        <use href="./images/hw6/sprite-modal.svg#icon-send"></use>
+      </svg>
     </li>
   </ul>
 </div>
-    <!-- 
-   -->
+
   </div>
-      
     </footer>
 
     <!-- Модальное окно -->
-  <div class="backdrop " data-modal>
-  <div class="modal">
+  <div class="backdrop is-hidden " data-modal>
+    <div class="modal">
+
     <button class="close-modal" 
       type="button"  data-modal-close>
       <svg class="icon-cross">
-        <use href="./images/hw5/sprite-cross.svg#icon-cross"></use>
+        <use href="./images/hw6/sprite-modal.svg#icon-cross"></use>
       </svg>
     </button>
 
-<form action="#" class="modal-form">
+    <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+
+  <form class="modal-form" action="#" >
+
   <label class="modal-form__field">
     Имя*
     <div class="modal-form__input-wrapper">
-      <input type="text" name="user_name" class="modal-form__input" required minlength="2">
+      <input class="modal-form__input" 
+        type="text" name="user_name"  required minlength="2">
       <svg class="modal-form__input-icon">
-        <use href="./images/sprite.svg#name-icon"></use>
+        <use href="./images/hw6/sprite-modal.svg#icon-name-figure"></use>
       </svg>
     </div>
   </label>
+
   <label class="modal-form__field">
     Телефон*
     <div class="modal-form__input-wrapper">
-      <input type="tel" name="user_phone" class="modal-form__input" required>
+      <input class="modal-form__input" 
+        type="tel" name="user_phone"  required>
       <svg class="modal-form__input-icon">
-        <use href="./images/sprite.svg#phone-icon"></use>
+        <use href="./images/hw6/sprite-modal.svg#icon-phone"></use>
       </svg>
     </div>
   </label>
+
+<label class="modal-form__field">
+  Почта*
+  <div class="modal-form__input-wrapper">
+    <input class="modal-form__input" 
+      type="email" name="user_phone" required>
+    <svg class="modal-form__input-icon">
+      <use href="./images/hw6/sprite-modal.svg#icon-mail"></use>
+    </svg>
+  </div>
+</label>
+
   <label for="" class="modal-form__field">
     Комментарий
-    <textarea name="user_message" class="modal-form__message" placeholder="Сообщение"></textarea>
+    <textarea class="modal-form__message" 
+      name="user_message"  placeholder="Сообщение"></textarea>
   </label>
+  
   <label class="modal-form__check-label">
-    <input type="checkbox" name="user_policy" value="accept-policy" class="modal-form__check-policy">
-    <span class="custom-checkbox"></span>
+    <input class="modal-form__check-policy" type="checkbox" 
+      name="user_policy" 
+      value="accept-policy" >
+    <svg class="custom-checkbox">
+      <use href="./images/hw6/sprite-modal.svg#icon-check"></use>
+    </svg>
+
     <span class="modal-form__policy-text">
-      Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-form__policy-link"> Условия
+      Соглашаюсь с рассылкой и принимаю 
+      <a href="#" class="modal-form__policy-link"> Условия
         договора</a>
     </span>
   </label>
-  <button class="modal-form__btn">отправить</button>
-</form>
+  
+  <button class="modal-form__btn">Отправить</button>
 
+</form>
   </div>
   </div>
   

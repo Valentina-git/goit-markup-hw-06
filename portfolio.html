@@ -23,34 +23,38 @@
       
         <nav class="navigation">
           <!-- Logo-header -->
-          <a class="logo logo-header" href="./index.html" 
+          <a class="logo logo-header link" href="./index.html" 
           aria-label="logo">
             <span class="accent-web">Web</span>Studio</a>
       
           <!-- Site  -->
-          <ul class="site-nav list">
+          <ul class="site-nav">
             <li class="item">
-              <a class="site-nav__link" href="./index.html">
+              <a class="site-nav__link link" 
+              href="./index.html">
                 Студия</a></li>
             <li class="item">
-              <a class="site-nav__link current" href="./portfolio.html">
+              <a class="site-nav__link current link" 
+              href="./portfolio.html">
                 Портфолио</a></li>
             <li class="item">
-              <a class="site-nav__link" href="" >Контакты</a></li>
+              <a class="site-nav__link link" 
+              href="">Контакты</a></li>
           </ul>
         </nav>
 
     <address class="address">
-      <ul class="site-contacts list">
+      <ul class="site-contacts">
         <li class="item">
-          <a class="site-contact__link" 
+          <a class="site-contact__link link" 
             href="mailto:info@devstudio.com">
             <svg class="icon-mail">
               <use href="./images/sprite.svg#icon-mail"></use>
             </svg>
               info@devstudio.com</a></li>
         <li class="item">
-          <a class="site-contact__link" href="tel:+380961111111">
+          <a class="site-contact__link link" 
+            href="tel:+380961111111">
             <svg class="icon-tell">
               <use href="./images/sprite.svg#icon-tell"></use>
             </svg>
@@ -94,10 +98,10 @@
         <h2 class="section-title" hidden>Projects</h2>
         <div class="container">
 
-        <ul class="projects-list">
+        <ul class="projects-list ">
 
           <li class="card-item">
-            <a href="">
+            <a class=" link" href="">
               <div class="card">
               <img class="card-image" 
               src="./images/techno.jpg" 
@@ -115,7 +119,7 @@
           </li>
 
           <li class="card-item">
-            <a href="">
+            <a class=" link" href="">
               <div class="card">
               <img class="card-image" 
               src="./images/poster.jpg" 
@@ -133,7 +137,7 @@
           </li>
 
           <li class="card-item">
-            <a href="">
+            <a class=" link" href="">
               <div class="card">
               <img class="card-image" 
               src="./images/seafood.jpg" 
@@ -151,7 +155,7 @@
           </li>
 
           <li class="card-item">
-            <a href="">
+            <a class=" link" href="">
               <div class="card">
               <img class="card-image" 
               src="./images/prime.jpg" 
@@ -169,7 +173,7 @@
           </li>
 
           <li class="card-item">
-            <a href="">
+            <a class=" link" href="">
               <div class="card">
               <img class="card-image" 
               src="./images/boxes.jpg" 
@@ -187,7 +191,7 @@
           </li>
 
           <li class="card-item">
-            <a href="">
+            <a class=" link" href="">
               <div class="card"> 
               <img class="card-image" 
               src="./images/borders.jpg" 
@@ -205,7 +209,7 @@
           </li>
 
           <li class="card-item">
-            <a href="">
+            <a class=" link" href="">
               <div class="card">
               <img class="card-image" 
               src="./images/edition.jpg" 
@@ -223,7 +227,7 @@
           </li>
 
           <li class="card-item">
-            <a href="">
+            <a class=" link" href="">
               <div class="card" >
               <img class="card-image" 
               src="./images/lab.jpg" 
@@ -241,7 +245,7 @@
           </li>
 
           <li class="card-item">
-            <a href="">
+            <a class=" link" href="">
               <div class="card">
               <img class="card-image" 
               src="./images/growing.jpg" 
@@ -269,7 +273,7 @@
 <!-- address-block -->
         <div class="address-block">
 <!-- Logo-footer -->
-          <a href="" class="logo logo-footer">
+          <a href="" class="logo logo-footer link">
             <span class="accent-web">Web</span>Studio
           </a>
 
@@ -277,20 +281,20 @@
         <address class="address">
           <ul class="list-footer">
               <li class="footer-item">
-                <a class="footer-link full-white" 
+                <a class="footer-link full-white link" 
                 href="https://goo.gl/maps/Jzkq81QmXv9pryJU8" 
                 target="_blank" >
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
               <li class="footer-item">
-                <a class="footer-link" 
+                <a class="footer-link link" 
                 href="mailto:info@example.com">
                   info@example.com
                 </a>
               </li>
               <li class="footer-item">
-                <a class="footer-link" 
+                <a class="footer-link link" 
                 href="tel:+380991111111" >
                   +38 099 111 11 11
                 </a>
@@ -336,8 +340,28 @@
               </a>
             </li>
           </ul>
-      
         </div>
+
+<!-- Подпишитесь на рассылку -->
+<div class="subscribe">
+  <p class="subscribe-text">Подпишитесь на рассылку</p>
+
+  <ul class="subscribe-list">
+    <li class="subscribe-item">
+      <form class="subscribe-form" action="#">
+        <input class="subscribe-input" 
+          name="user-phone" type="email" 
+          placeholder="E-mail" required></form>
+    </li>
+    <li class="subscribe-item">
+      <button class="subscribe-btn" type="submit">Подписаться</button>
+      <svg class="subscribe-icon">
+        <use href="./images/hw6/sprite-modal.svg#icon-send"></use>
+      </svg>
+    </li>
+  </ul>
+</div>
+
       </div>
     </footer>
   </body>
